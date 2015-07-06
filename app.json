@@ -1,0 +1,13 @@
+{
+  "name": "One Quote A Day.",
+  "description": "A Bot to post one inspirational quote per day.",
+  "repository": "https://github.com/avinoth/inspiry",
+  "env": {
+    "SLACK_WEBHOOK": {
+      "description": "Incoming Webhook URL of Slack.",
+      "value": "XXXXXXXXXXXXX"
+    }
+  },
+  "keywords": ["ruby", "slack_bot"],
+  "addons": ["scheduler:standard"]
+}
