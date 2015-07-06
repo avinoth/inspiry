@@ -6,6 +6,10 @@
     "SLACK_WEBHOOK": {
       "description": "Incoming Webhook URL of Slack.",
       "value": "XXXXXXXXXXXXX"
+    },
+    "IMAGE_URL": {
+      "description": "Image URL that shows as an icon with the message.",
+      "value": "https://libcom.org/files/images/library/fist.jpg"
     }
   },
   "keywords": ["ruby", "slack_bot"],
