@@ -22,7 +22,7 @@ end
 SLACK_WEBHOOK = ENV["SLACK_WEBHOOK"]
 
 #Available Categories = ["inspire", "management", "sports", "life", "funny", "love", "art"]
-category = "inspire"
+category = ENV["CATEGORY"] || "inspire"
 TSS_URL = "http://api.theysaidso.com/qod.json?category=#{category}"
 
 puts "Off to Work.."
