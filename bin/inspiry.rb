@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'date'
 
 def get_quote
   puts "Getting the Quote of the day."
@@ -19,12 +20,14 @@ def post_message author, quote
   puts "Posted a message. Hope they'd like it."
 end
 
-SLACK_WEBHOOK = ENV["SLACK_WEBHOOK"]
+unless ['Saturday', 'Sunday'].include? Date.today.strftime('%A')
+  SLACK_WEBHOOK = ENV["SLACK_WEBHOOK"]
 
-#Available Categories = ["inspire", "management", "sports", "life", "funny", "love", "art"]
-category = "inspire"
-TSS_URL = "http://api.theysaidso.com/qod.json?category=#{category}"
+  #Available Categories = ["inspire", "management", "sports", "life", "funny", "love", "art"]
+  category = "inspire"
+  TSS_URL = "http://api.theysaidso.com/qod.json?category=#{category}"
 
-puts "Off to Work.."
-get_quote
-puts "All done for the day."
+  puts "Off to Work.."
+  get_quote
+  puts "All done for the day."
+end
