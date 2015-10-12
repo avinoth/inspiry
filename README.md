@@ -13,7 +13,14 @@ Only three things to do really,
  ```ruby bin/inspiry.rb```
    and schedule it Daily. I'm saying dailly because it uses the quote of the day and it doesn't make sense to post the same message every hour.
 
+Sample message,
+
+![example_img](http://i.imgur.com/W86pj52.png)
+
+
 (optional) If you'd like to have a custom image as icon of the message, add it to env var as `IMAGE_URL`. The current default is 
 
 ![image](https://libcom.org/files/images/library/fist.jpg)
- 
+
+
+*Quote source - [TheySaidSo](http://theysaidso.com)*
