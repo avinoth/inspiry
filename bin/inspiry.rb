@@ -9,7 +9,7 @@ def get_quote
   author = body["contents"]["quotes"][0]["author"]
   puts "Got a Nice quote from #{author}"
   quote = body["contents"]["quotes"][0]["quote"]
-  puts "He says - #{quote}"
+  puts "This wise person says - #{quote}"
   post_message(author, quote)
 end
 
